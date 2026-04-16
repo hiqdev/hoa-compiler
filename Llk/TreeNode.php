@@ -95,9 +95,9 @@ class TreeNode implements Visitor\Element
      */
     public function __construct(
         $id,
-        array $value    = null,
+        ?array $value   = null,
         array $children = [],
-        self  $parent   = null
+        ?self $parent   = null
     ) {
         $this->setId($id);
 

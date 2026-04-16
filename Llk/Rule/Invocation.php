@@ -95,7 +95,7 @@ abstract class Invocation
     public function __construct(
         $rule,
         $data,
-        array $todo = null,
+        ?array $todo = null,
         $depth      = -1
     ) {
         $this->_rule         = $rule;

@@ -100,7 +100,7 @@ class Uniform extends Sampler
      * @param   int                     $n       Size.
      * @return  string
      */
-    public function uniform(Compiler\Llk\Rule $rule = null, $n = -1)
+    public function uniform(?Compiler\Llk\Rule $rule = null, $n = -1)
     {
         if (null === $rule && -1 === $n) {
             $rule = $this->_rules[$this->_rootRuleName];
@@ -175,7 +175,7 @@ class Uniform extends Sampler
      * @param   int                     $n       Size.
      * @return  int
      */
-    public function count(Compiler\Llk\Rule $rule = null, $n = -1)
+    public function count(?Compiler\Llk\Rule $rule = null, $n = -1)
     {
         if (null === $rule || -1 === $n) {
             return 0;
